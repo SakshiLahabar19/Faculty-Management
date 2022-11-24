@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
 
       $userinfotabele = mysqli_fetch_assoc($res1);
       $usertable = mysqli_fetch_assoc($res2);
-     // $facteaching = mysqli_fetch_assoc($res3);
+      $facteaching = mysqli_fetch_assoc($res3);
       $classtable = mysqli_fetch_assoc($res4);
       $certtable = mysqli_fetch_assoc($res5);
       $achtable = mysqli_fetch_assoc($res6);
@@ -58,11 +58,11 @@ if(isset($_POST['submit'])){
                     <th>Achievements</th>
                     <th>certification name</th>
                 </tr>
-                 <?php //while( 
-                   // $userinfotabele = mysqli_fetch_assoc($res1) && $usertable = mysqli_fetch_assoc($res2) && 
-                   // $facteaching = mysqli_fetch_assoc($res3) &&  $classtable = mysqli_fetch_assoc($res4) &&  
-                   // $certtable = mysqli_fetch_assoc($res5)&& 
-                    //$achtable = mysqli_fetch_assoc($res6)){   ?> 
+                  <?php //while( 
+                    //$userinfotabele = mysqli_fetch_assoc($res1) && $usertable = mysqli_fetch_assoc($res2) && 
+                    //$facteaching = mysqli_fetch_assoc($res3) &&  $classtable = mysqli_fetch_assoc($res4) &&  
+                    //$certtable = mysqli_fetch_assoc($res5)&& 
+                    //$achtable = mysqli_fetch_assoc($res6)){   ?>  
                 <?php while ($facteaching =mysqli_fetch_array($res3)) { ?>
                     <tr>
                         <td>
